@@ -1,0 +1,118 @@
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.app-name {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.app-name-sub {
+    font-family: 'Ma Shan Zheng', cursive;
+}
+
+.grid-ip {
+    grid-area: input;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Courier Prime', monospace;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.grid-btn {
+    grid-area: button;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+    background-color: #8BFE49;
+    font-family: 'Bowlby One SC', cursive;
+
+
+}
+
+.grid-ip-add-btn {
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "input input input input button";
+}
+
+
+.grid-content,
+#no-notes {
+    font-size: 20px;
+    display: inline-block;
+    height: 70px;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: left;
+    max-width: 100%;
+    overflow: auto;
+    position: relative;
+    border-radius: 10px;
+    font-family: 'Courier Prime', monospace;
+
+
+}
+
+#no-notes {
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(223, 223, 223, 0.3);
+    border: 2px solid #DFDFDF;
+    height: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.main-container {
+    min-height: 100%;
+    margin-bottom: -30px;
+}
+
+.footer,
+.push {
+    height: 20px;
+
+}
+
+.footer {
+    padding-top: 10px;
+    background-color: #8BFE49;
+    font-family: 'Courier Prime', monospace;
+    text-align: center;
+    font-size: 10px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-ip-add-btn {
+        grid-template-areas: "input"
+            "button";
+    }
+
+    .grid-btn {
+        height: 40px;
+    }
+}
