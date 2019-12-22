@@ -84,19 +84,18 @@ input:focus{
     margin-bottom: -30px;
 }
 
-.footer,
-.push {
-    height: 20px;
-
-}
-
 .footer {
-    padding-top: 10px;
-    background-color: #8BFE49;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8BFE49;;
     font-family: 'Courier Prime', monospace;
     text-align: center;
     font-size: 10px;
-}
+    height: 20px;
+    padding-top: 10px;
+ }
 
 html,
 body {
@@ -117,5 +116,8 @@ body {
 
     .grid-btn {
         height: 40px;
+    }
+    .app-name{
+        font-size: 35px;
     }
 }
