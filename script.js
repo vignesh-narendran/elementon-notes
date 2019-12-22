@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    setInterval(function(){
+        if(window.jQuery){
+            $('.loading-icon').hide();
+            $('#ip-text-box').removeAttr('disabled');
+        }else{
+            $('#ip-text-box').attr('disabled','disabled');
+            $('.loading-icon').show();
+        }
+    },2000);
     notesFromLocalStorage = null;
     notesCount = null;
     colors = ["rgba(255, 0, 0, 0.3)", "rgba(51, 255, 153, 0.3)", "rgba(255, 0, 255, 0.3)", "rgba(255, 215, 51, 0.3)", "rgba(0, 255, 255, 0.3)"];

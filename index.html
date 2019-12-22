@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Courier+Prime&display=swap"
         rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Elementon Notes</title>
     <link rel="icon" type="icon/png" href="https://vignesh-narendran.github.io/elementon-notes/Elementon_Notes.png">
 </head>
-<script src="jquery-migrate-1.4.1.js"></script>
 <script src="script.js"></script>
 <body>
     <div class="main-container">
@@ -20,6 +22,7 @@
             <input type="button" class="grid-btn" disabled id="add-btn" value="Add Note">
         </div>
         <div id="no-notes" style="display:none;">No notes to display. Create your first note!</div>
+        <img class="loading-icon" src="Spinner-1s-200px.gif" alt="Loading">
         <div class="grid-container" id="display-notes" style="height: 200px;"></div>
         <div class="push"></div>
     </div>
