@@ -1,7 +1,6 @@
-
-    input:focus{
+input:focus{
         outline: none;
-    }
+}
 .main-container {
     width: 100%;
     margin: 0 auto;
@@ -16,7 +15,7 @@
 }
 
 .app-name-sub {
-    font-family: 'Ma Shan Zheng', cursive;
+    font-family: 'Courier Prime', monospace;
 }
 
 .grid-ip {
